@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+
+}
+main {
+    margin: auto;
+    
+}
+
+header {
+    border: 1px solid black;
+    text-align: center;
+}
+
+img {
+    width: 20%;
+    height: 20%;
+}
+#csonakImg {
+   
+    height: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.articleContainer {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    column-gap: 30px;
+}
+
+#bal {
+    border: 1px solid black;
+
+}
+#csonak {
+    border: 1px solid black;
+    background-color: aqua;
+    z-index: -1;
+    
+}
+
+#jobb {
+    display: grid;
+    border: 1px solid black;
+}
+.kiemel{
+    border: 2px red solid;
+    cursor: grab;
+}
+.lathatatlan {
+    display: none;
+}
+
+
