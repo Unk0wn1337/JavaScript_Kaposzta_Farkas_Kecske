@@ -23,6 +23,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    z-index: -1;
 }
 
 .articleContainer {
@@ -38,7 +39,6 @@ img {
 #csonak {
     border: 1px solid black;
     background-color: aqua;
-    z-index: -1;
     
 }
 

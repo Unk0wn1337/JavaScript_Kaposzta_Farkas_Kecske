@@ -34,12 +34,26 @@ function kepreKattintas(){
             ujKep.src = event.target.src;
             ujKep.classList.add("athelyezettKep");
             ujKep.innerHTML += `<style>
-                                    
+                                display: block;
+                                margin-left: auto;
+                                margin-right: auto;
                                 </style>`
-            CSONAK_IMG.appendChild(ujKep);
-
-
+                                
+            for (let index = 0; index < KEPEK_TOMB.length; index++) {
+                if (KEPEK_TOMB[index] === "http://127.0.0.1:5500/kepek/farkas.png" || KEPEK_TOMB[index] === "http://127.0.0.1:5500/kepek/kaposzta.png") {
+                    alert("Helytelen volt a választás!");
+                    
+                } else if (KEPEK_TOMB[index] === "http://127.0.0.1:5500/kepek/kecske2.png"){
+                    CSONAK_IMG.appendChild(ujKep);
+            }
+                    
+                   
+        }
+        
         });
+            
+        
+       
     }
     
 
