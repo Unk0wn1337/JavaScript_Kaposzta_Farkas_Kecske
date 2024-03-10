@@ -38,23 +38,19 @@ function kepreKattintas(){
                                 margin-left: auto;
                                 margin-right: auto;
                                 </style>`
-                                
-            for (let index = 0; index < KEPEK_TOMB.length; index++) {
-                if (KEPEK_TOMB[index] === "http://127.0.0.1:5500/kepek/farkas.png" || KEPEK_TOMB[index] === "http://127.0.0.1:5500/kepek/kaposzta.png") {
-                    alert("Helytelen volt a választás!");
-                    
-                } else if (KEPEK_TOMB[index] === "http://127.0.0.1:5500/kepek/kecske2.png"){
-                    CSONAK_IMG.appendChild(ujKep);
+                                console.log(ujKep);  
+            if(index === 0){
+                CSONAK_IMG.appendChild(ujKep);
+            } else {
+                alert("Nem jo lepes!")
             }
-                    
-                   
-        }
+                                    
         
         });
+    }
             
         
        
-    }
     
 
 }
